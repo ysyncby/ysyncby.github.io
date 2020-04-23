@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>devfolio</title>
+  <title>Boyan Cai</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="img/me.png" type="image/x-icon">
   <link rel="stylesheet" href="css/main.bundle.css">
@@ -62,11 +62,41 @@
     <div class="container">
       <h1 class="title">About Me</h1>
       <hr />
-      <p>Hi! I'm currently a <a href="https://ece.ucdavis.edu/" target="_blank">Master of Science in Computer Engineering</a> student at <a href="https://www.ucdavis.edu/" target="_blank">University of California, Davis</a>. Before my study at UCDavis, I was a Machine Learning Intern at <a href="https://www.clobotics.com/" target="_blank">Clobotics</a> and a software engineer at <a href="https://ehang.com/" target="_blank">Ehang</a>. I obtained my B.Eng. and M.Eng. in Computer Engineering from Xian Jiao Tong University, China.</p>
+      <p>Hi! I'm currently a <a href="https://ece.ucdavis.edu/" target="_blank">Master of Science in Computer Engineering</a> student at the <a href="https://www.ucdavis.edu/" target="_blank">University of California, Davis</a>. Before my study at UCDavis, I was a Machine Learning Intern at <a href="https://www.clobotics.com/" target="_blank">Clobotics</a> and a software engineer at <a href="https://ehang.com/" target="_blank">Ehang</a>. I obtained my B.Eng. and M.Eng. in Computer Engineering from Xian Jiao Tong University, China.</p>
       <br />
-      <p>My interests broadly lie in Distributed System, Machine Learning and related applications.</p>
+      <p>My interests broadly lie in Distributed Systems, Machine Learning and related applications.</p>
     </div>
   </section>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Projects</h1>
+      <hr />
+      <div class="tile is-ancestor">
+        <div class="tile is-vertical is-12">
+          <div class="tile">
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Real-time Stock Data Analysis</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-4-modal" src="img/projects/data_platform/data_pipeline.png">
+                </figure>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification">
+                <p class="title">Spectrum Analysis</p>
+                <figure class="image is-4by3">
+                  <img class="modal-trigger" data-target="project-5-modal" src="img/projects/spectrum_analysis/spec_ana_correlation.jpg">
+                </figure>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section">
     <div class="container">
       <h1 class="title">Experience</h1>
@@ -167,43 +197,6 @@
 
   <section class="section">
     <div class="container">
-      <h1 class="title">Projects</h1>
-      <hr />
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-12">
-          <div class="tile">
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-4-modal" src="img/project-4-cover.png">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-5-modal" src="img/project-5-cover.png">
-                </figure>
-              </article>
-            </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-6-modal" src="img/project-6-cover.png">
-                </figure>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
       <h1 class="title">Education</h1>
       <hr />
       <div class="card">
@@ -235,6 +228,92 @@
     </div>
   </section>
 
+
+  <!-- Modals -->
+  <div id="project-4-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Real-time Stock Data Analysis Platform</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-4-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/projects/data_platform/data_pipeline.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>Designed a stock price analysis pipeline in Python using Apache Kafka, Apache Cassandra, Spark and Redis.</p>
+            <ul>
+              <li>Collected real-time financial data at customized intervals based on Kafka, Alphavantage API and Twitter API.</li>
+              <li>Implemented storage layer using Cassandra and Redis with optimized schema to improve query performance.</li>
+              <li>Encapsulated functionalities as microservices and orchestrated containers using Docker and Mesos.</li>
+              <li>Implemented one-click AWS EC2 deployment using Ansible and Terraform.</li>
+            </ul>
+          <div class="tags">
+            <span class="tag">AWS</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Mesos</span>
+            <span class="tag">Kafka</span>
+            <span class="tag">Cassandra</span>
+            <span class="tag">Spark</span>
+            <span class="tag">Redis</span>
+            <span class="tag">Terraform</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="project-5-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Spectrum Analysis</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="project-5-modal-carousel" class="carousel">
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/projects/spectrum_analysis/spec_ana_raw_classified.png">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/projects/spectrum_analysis/spec_ana_correlation.jpg">
+          </figure>
+          <figure class="image is-4by3 carousel-cell">
+            <img src="img/projects/spectrum_analysis/spec_ana_results.png">
+          </figure>
+        </div>
+
+        <div class="content">
+          <p>Established a remote sensing method to detect injury by soil-borne pathogens and abiotic stress with classification results up to 80% for precision and 100% for recall.</p>
+          <ul>
+            <li>Spectral measurement of walnut leaves contains 2176 wavelengths in the range of 190-1750 nm.</li>
+            <li>Pre-processing methods: Downscaling, Standard Normal Variate, Covariance Matrix.</li>
+            <li>Post-processing methods: Linear, Logistic, Ridge, Lasso; Classification methods: SVM, Random Forest, LDA, QDA, Neural Network</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Linux</span>
+            <span class="tag">Python</span>
+            <span class="tag">Matlab</span>
+            <span class="tag">Data Analysis</span>
+          </div>
+        </div>
+
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  
   <section class="section">
     <div class="container">
       <h1 class="title">Contact</h1>
@@ -242,7 +321,7 @@
       <nav class="level">
         <div class="level-item has-text-centered">
           <div>
-            <a href="https://github.com/mmacneil" class="icon is-large">
+            <a href="https://github.com/ysyncby" class="icon is-large">
               <i class="fab fa-2x fa-github"></i>
             </a>
             <p class="heading"><a href="https://github.com/ysyncby">github.com/ysyncby</a></p>
@@ -267,262 +346,6 @@
       </nav>
     </div>
   </section>
-
-  <!-- Modals -->
-  <div id="project-1-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-
-        <div id="project-1-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
-          </figure>
-        </div>
-
-        <div class="content">
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
-
-          <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
-          </div>
-
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-2-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-
-        <div id="project-2-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
-          </figure>
-        </div>
-
-        <div class="content">
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
-
-          <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
-          </div>
-
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-3-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <div id="project-3-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
-          </figure>
-        </div>
-
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
-          <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
-          </div>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-4-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <div id="project-4-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
-          </figure>
-        </div>
-
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
-          <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
-          </div>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-5-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <div id="project-5-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
-          </figure>
-        </div>
-
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
-          <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
-          </div>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
-  <div id="project-6-modal" class="modal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
-        <button class="delete" aria-label="close"></button>
-      </header>
-      <section class="modal-card-body">
-        <div id="project-6-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
-          </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
-          </figure>
-        </div>
-
-        <div class="content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
-          <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
-          </div>
-        </div>
-
-      </section>
-      <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
-      </footer>
-    </div>
-  </div>
-
   <script src="js/bundle.js"></script>
 </body>
 
